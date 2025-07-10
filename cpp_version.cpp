@@ -40,9 +40,9 @@ int main() {
     provides the version of the gnu compiler being used
 
     Default Compiling command
-        g++ 2025.0618_cpp_version.cpp -o cpp_version
+        g++ cpp_version.cpp -o cpp_version
     Force Compiling with C++20
-        g++ g++ 2025.0618_cpp_version.cpp -o cpp_version_20 -std=c++20
+        g++ g++ cpp_version.cpp -o cpp_version_20 -std=c++20
 
 
     ===========
