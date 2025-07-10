@@ -108,6 +108,6 @@ int main() {
     sudo-apt-get install libsfml-dev
 
     linux command to compile this program
-    g++ 2025.06.21b_pomodoro.cpp -o pomodoro_beep -lsfml-audio -lsfml-system
+    g++ pomodoro.cpp -o pomodoro -lsfml-audio -lsfml-system
 
 */
