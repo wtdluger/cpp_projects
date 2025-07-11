@@ -3,28 +3,30 @@ using namespace std;
 
 int main() {
     cout << "__cplusplus = " << __cplusplus << endl;
-    if (__cplusplus == 202302L) {
-        cout << "C++23 Standard" << endl;
+    switch (__cplusplus) {
+        case 202302L:
+            cout << "C++23 Standard" << endl;
+            break;
+        case 202002L:
+            cout << "C++20 Standard" << endl;
+            break;
+        case 201703L:
+            cout << "C++17 Standard" << endl;
+            break;
+        case 201402L:
+            cout << "C++14 Standard" << endl;
+            break;
+        case 201103L:
+            cout << "C++11 Standard" << endl;
+            break;
+        case 199711L:
+            cout << "C++98 Standard" << endl;
+            break;
+        default:
+            cout << "pre-standard C++" << endl;
+            break;
     }
-    else if (__cplusplus == 202002L) {
-        cout << "C++20 Standard" << endl;
-    }
-    else if (__cplusplus == 201703L) {
-        cout << "C++17 Standard" << endl;
-    }
-    else if (__cplusplus == 201402L) {
-        cout << "C++14 Standard" << endl;
-    }
-    else if (__cplusplus == 201103L) {
-        cout << "C++11 Standard" << endl;
-    }
-    else if (__cplusplus == 199711L) {
-        cout << "C++98 Standard" << endl;
-    }
-    else {
-        cout << "pre-standard C++" << endl;
-    }
-
+    
     return 0;
 }
 /*
