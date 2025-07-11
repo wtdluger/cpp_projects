@@ -7,6 +7,9 @@ int main() {
         case 202302L:
             cout << "C++23 Standard" << endl;
             break;
+        case 202100L:
+            cout << "Partially Implemented C++23" << endl;
+            break;
         case 202002L:
             cout << "C++20 Standard" << endl;
             break;
